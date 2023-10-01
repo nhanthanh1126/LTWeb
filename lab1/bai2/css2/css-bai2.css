@@ -1,0 +1,38 @@
+.container{
+  width: 1000px;
+  margin: auto;
+  min-height: 600px;
+  border: 2px solid #5d5d5d;
+}
+.container .content{
+  overflow: auto;
+}
+.container header{
+  border: 2px solid #5d5d5d;
+}
+.container nav{
+  border: 2px solid #5d5d5d;
+}
+.container .content .right{
+  width: 760px;
+  border: 2px solid #5d5d5d;
+  float: right;
+}
+.container .content .left{
+  width: 232px;
+  border: 2px solid #5d5d5d;
+  float: left;
+}
+.container footer{
+  border: 2px solid #5d5d5d;
+}
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+.content h1 {
+  height: 300px;
+}

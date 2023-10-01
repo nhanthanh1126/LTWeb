@@ -1,0 +1,46 @@
+
+.container{
+  width: 1000px;
+  margin: auto;
+  min-height: 600px;
+  border: 2px solid #5d5d5d;
+}
+.container .content{
+  overflow: auto;
+}
+h1 {
+  margin-top: 0;
+}
+.container header{
+  height: 100px;
+  background: #d3d3d3;
+  margin: 1px;
+  border: 2px solid #5d5d5d;
+}
+.container .content .right{
+  width: 750px;
+  height: 500px;
+  margin: 1px;
+  border: 2px solid #5d5d5d;
+  float: right;
+}
+.container .content .left{
+  width: 234px;
+  height: 500px;
+  background: #eee8aa;
+  margin: 1px;
+  border: 2px solid #5d5d5d;
+  float: left;
+}
+.container footer{
+  background: #d3d3d3;
+  margin: 1px;
+  border: 2px solid #5d5d5d;
+}
+.ft-content {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

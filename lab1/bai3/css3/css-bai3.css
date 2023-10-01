@@ -1,0 +1,38 @@
+#container{
+  width: 900px;
+  margin: auto;
+  min-height: 600px;
+}
+#container #content{
+  overflow: auto;
+}
+#container header{
+  background: #c4996c;
+  height: 120px;
+  border: 1px solid #5d5d5d;
+  margin-bottom: 15px;
+}
+#container nav{
+  background: #a8a9ad;
+  height: 400px;
+  border: 1px solid #5d5d5d;
+}
+#container #content h1{
+  text-align: center;
+}
+#container #content .item{
+  height: 220px;
+  width: 180px;
+  background: #a8a9ad;
+  float: left;
+  clear: right;
+  border: 1px solid #5d5d5d;
+  margin: 50px;
+  padding: 5px;
+}
+#container footer{
+  background: #115d7f;
+  min-height: 120px;
+  border: 1px solid #5d5d5d;
+}
+
