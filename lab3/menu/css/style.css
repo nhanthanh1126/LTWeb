@@ -8,7 +8,7 @@ body {
 .container {
     height: 55px;
     width: 1000px;
-    background: #c3c3c3;
+    background: #d2d2d2;
     margin: 0 auto;
     border-bottom: solid darkred 2px;
     border-left: solid darkred 5px;
@@ -34,10 +34,11 @@ body {
 
 .dr-menu .menu-item .dr-menu .menu-item {
     float: inherit;
+    border-bottom: solid #9c9696 2px;
 }
 
 .dr-menu .menu-item:hover .dr-menu {
     color: black;
-    background: #c3c3c3;
+    background: #d2d2d2;
     display: block;
 }

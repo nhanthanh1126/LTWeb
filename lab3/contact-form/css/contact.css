@@ -1,0 +1,90 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #E6E6E6;
+    align-content: center;
+    justify-content: center;
+}
+    form {
+        background-color: white;
+        width: 40%;
+        height: 600px;
+        margin: auto;
+        border-radius: 5px;
+        padding: 35px;
+    }
+        div.contact h2{
+            text-align: center;
+            font-weight: bolder;
+            font-size: 25px;
+            margin-bottom: 50px;
+        }
+        form span {
+            font-size: 10px;
+        }
+        form input[type=text], input[type=email], input[type=tel], select, textarea {
+            border: none;
+            outline: none;
+            background-color: #F7F7F7;
+        }
+        div.full-name {
+            background-color: #F7F7F7;
+            border-radius: 10px;
+            padding: 10px;
+            font-weight: bold;
+        }
+        div.information {
+            display: flow;
+        }
+            div.email {
+                background-color: #F7F7F7;
+                border-radius: 10px;
+                margin-top: 15px;
+                padding: 10px;
+                width: 45%;
+                float: left;
+                font-weight: bold;
+            }
+            div.phone {
+                background-color: #F7F7F7;
+                border-radius: 10px;
+                margin-top: 15px;
+                padding: 10px;
+                width: 45%;
+                float: right;
+                font-weight: bold;
+            }
+        div.service {
+            background-color: #F7F7F7;
+            border-radius: 10px;
+            margin-top: 90px;
+            padding: 10px;
+            font-weight: bold;
+        }
+            div.service select{
+                width: 100%;
+            }
+        div.message {
+            background-color: #F7F7F7;
+            border-radius: 10px;
+            margin-top: 20px;
+            padding: 10px;
+            height: 100px;
+            font-weight: bold;
+        }
+            div.message textarea {
+                width: 100%;
+                resize: none;
+                overflow-y: auto;
+            }
+        button.block {
+            margin-top: 30px;
+            display: block;
+            width: 100%;
+            height: 40px;
+            border: none;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+        }

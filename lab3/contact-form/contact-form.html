@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+<div class="container">
+    <form action="#" method="post">
+        <div class="contact">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="full-name">
+            <span>FULL NAME*</span><br>
+            <input type="text" name="full-name" id="full-name" placeholder="Enter Your Name" required>
+        </div>
+        <div class="information">
+            <div class="email">
+                <span>EMAIl*</span><br>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+            </div>
+            <div class="phone">
+                <span>PHONE</span><br>
+                <input type="tel" name="phone-number" id="phone" placeholder="Enter Your Phone" pattern="[0-9]{10}">
+            </div>
+        </div>
+        <div class="service">
+            <span>NEEDED SERVICE*</span><br>
+            <select name="service" id="service" required>
+                <option value="default">Please choose</option>
+            </select>
+        </div>
+        <div class="message">
+            <span>MESSAGE</span><br>
+            <textarea name="message" id="message" placeholder="Your message here"></textarea>
+        </div>
+        <div class="button">
+            <button type="submit" class="block">Submit →</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

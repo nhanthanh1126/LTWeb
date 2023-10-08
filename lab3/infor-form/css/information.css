@@ -1,0 +1,140 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #E6E6E6;
+    align-content: center;
+    justify-content: center;
+}
+    form {
+        background-color: white;
+        width: 25%;
+        height: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        padding: 35px;
+    }
+    .span {
+            color: #84D52C;
+            margin-bottom: 15px;
+    }
+    .account, .information, .payment, .term-agreement {
+        margin-bottom: 20px;
+    }
+        .name, .email, .password, .card-number{
+            background-color: #F9F9F9;
+            margin-bottom: 15px;
+            padding: 5px;
+            border: 1px solid #EBEBEB;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+        }
+            .account img, .card-number img{
+                padding: 5px;
+                border-right: 1px solid #EBEBEB;
+            }
+            .account input, .card-number input {
+                padding: 5px;
+                border: none;
+                outline: none;
+                background-color: #F9F9F9;
+            }
+        .information {
+            display: block;
+            height: 75px;
+        }
+            .birthdate {
+                width: 50%;
+                float: left;
+            }
+                .birthdate input {
+                    width: 25%;
+                    height: 30px;
+                    border: 1px solid #EBEBEB;
+                    border-radius: 2px;
+                    text-indent: 5px;
+                }
+            .gender {
+                width: 45%;
+                float: right;
+            }
+                .gender .button {
+                    display: flex;
+                    flex-direction: row;
+                    border: 1px solid #EBEBEB;
+                    border-radius: 2px;
+                }
+    button.block {
+        display: block;
+        width: 50%;
+        height: 30px;
+        border: 1px solid #EBEBEB;
+        background-color: #F9F9F9;
+        color: #C6C6C6;
+    }
+        .payment-method {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 15px;
+        }
+        .card-info {
+            display: block;
+            height: 75px;
+        }
+            .card-cvc {
+                background-color: #F9F9F9;
+                width: 50%;
+                margin-bottom: 15px;
+                padding: 5px;
+                border: 1px solid #EBEBEB;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: row;
+                float: left;
+            }
+                .card-cvc img {
+                    padding: 10px;
+                    border-right: 1px solid #EBEBEB;
+                }
+                .card-cvc input {
+                    padding: 10px;
+                    width: 70%;
+                    border: none;
+                    outline: none;
+                    background-color: #F9F9F9;
+                }
+            .card-date {
+                float: right;
+                display: flex;
+                flex-direction: row;
+                width: 45%;
+                height: 38px;
+            }
+                .card-date .month, .card-date .year {
+                    background-color: #F9F9F9;
+                    width: 50%;
+                    height: inherit;
+                    margin-bottom: 15px;
+                    padding: 5px;
+                    border: 1px solid #EBEBEB;
+                    border-radius: 5px;
+                }
+                    .card-date select {
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                        background-color: #F9F9F9;
+                    }
+        .agreement {
+            display: flex;
+            flex-direction: row;
+            color: #D5D5D5;
+            font-size: 12px;
+        }
+            .agreement input {
+                height: 10px;
+            }

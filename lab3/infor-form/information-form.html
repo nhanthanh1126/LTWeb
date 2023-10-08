@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Information Form</title>
+    <link rel="stylesheet" href="css/information.css">
+</head>
+<body>
+<div class="container">
+    <form action="#" method="post">
+        <div class="account">
+            <div class="span">
+                <span>Account</span>
+            </div>
+            <div class="name">
+                <img src="../svgs/regular/user.svg" width="10" height="10">
+                <input type="text" name="username" placeholder="Full Name">
+            </div>
+            <div class="email">
+                <img src="../svgs/regular/envelope.svg" width="10" height="10">
+                <input type="email" name="email" placeholder="Email Address">
+            </div>
+            <div class="password">
+                <img src="../svgs/solid/key.svg" width="10" height="10">
+                <input type="password" name="password" placeholder="Password">
+            </div>
+        </div>
+        <div class="information">
+            <div class="birthdate">
+                <div class="span">
+                    <span>Date of Birth</span>
+                </div>
+                <div class="text-input">
+                    <input type="text" name="day" placeholder="DD">
+                    <input type="text" name="month" placeholder="MM">
+                    <input type="text" name="year" placeholder="YYYY">
+                </div>
+            </div>
+            <div class="gender">
+                <div class="span">
+                    <span>Gender</span>
+                </div>
+                <div class="button">
+                    <button class="block">Male</button>
+                    <button class="block">Female</button>
+                </div>
+            </div>
+        </div>
+        <div class="payment">
+            <div class="span">
+                <span>Payment Details</span>
+            </div>
+            <div class="payment-method">
+                <button class="block"><img src="../svgs/brands/cc-visa.svg" width="10" height="10"> Credit Card</button>
+                <button class="block"><img src="../svgs/brands/cc-paypal.svg" width="10" height="10"> Paypal</button>
+            </div>
+            <div class="card-number">
+                <img src="../svgs/regular/credit-card.svg" width="10" height="10">
+                <input type="text" pattern="" placeholder="Card Number">
+            </div>
+            <div class="card-info">
+                <div class="card-cvc">
+                    <img src="../svgs/regular/user.svg" width="10" height="10">
+                    <input type="text" name="card-cvc" placeholder="Card CVC">
+                </div>
+                <div class="card-date">
+                    <div class="month">
+                        <select name="card-date" id="card-month">
+                            <option value="January" selected>January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                    </div>
+                    <div class="year">
+                        <select name="card-date" id="card-year">
+                            <option value="2015" selected>2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                            <option value="2031">2031</option>
+                            <option value="2032">2032</option>
+                            <option value="2033">2033</option>
+                            <option value="2034">2034</option>
+                            <option value="2035">2035</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="term-agreement">
+                <div class="span">
+                    <span>Terms and Conditions</span>
+                </div>
+                <div class="agreement">
+                    <input type="checkbox" id="agreement" value="agreed">
+                    <label for="agreement">I accept the terms and conditions for signing up to this service, and hereby
+                        confirm I have read the privacy policy</label>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
