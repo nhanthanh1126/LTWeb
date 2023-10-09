@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .button {
+            width: 80px;
+            height: 80px;
+            margin: 5px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    var currentNumber = 1;
+
+    $(document).ready(function() {
+        createButtons();
+
+        $('.button').on('click', function() {
+            var clickedButton = $(this);
+            var number = parseInt(clickedButton.attr('data-number'));
+
+            if (number === currentNumber) {
+                clickedButton.css('background-color', '#ccc');
+                clickedButton.addClass('removed');
+                clickedButton.off('click');
+                clickedButton.remove();
+
+                currentNumber++;
+
+                if ($('.button.removed').length === 64) {
+                    alert('Hoàn thành trò chơi!');
+                }
+            } else {
+                alert('Nhấn sai!');
+            }
+        });
+    });
+
+    function createButtons() {
+        var container = $('body');
+        for (var i = 1; i <= 64; i++) {
+            var button = $('<div>').addClass('button').attr('data-number', i).text(i);
+            container.append(button);
+        }
+    }
+</script>
+</body>
+</html>

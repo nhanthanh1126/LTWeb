@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xoay hình</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #image {
+            width: 200px;
+            height: 200px;
+            transition: transform 0.5s ease;
+        }
+
+    </style>
+</head>
+<body>
+<img id="image" src="img/beach.jpg" alt="img">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        setInterval(function() {
+            rotateImage();
+        }, 2000);
+    });
+
+    function rotateImage() {
+        $('#image').css('transform', 'rotate(15deg)');
+        setTimeout(function() {
+            $('#image').css('transform', 'rotate(0deg)');
+        }, 500);
+    }
+</script>
+</body>
+</html>

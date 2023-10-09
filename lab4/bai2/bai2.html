@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc 2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Giải phương trình bậc 2:</h1>
+    <div class="input-container">
+        <label for="input-a">Nhập a:</label>
+        <input type="text" id="input-a">
+    </div>
+
+    <div class="input-container">
+        <label for="input-b">Nhập b:</label>
+        <input type="text" id="input-b">
+    </div>
+
+    <div class="input-container">
+        <label for="input-c">Nhập c:</label>
+        <input type="text" id="input-c">
+    </div>
+
+    <button onclick="giaiPhuongTrinhBacII()">Giải</button>
+
+    <div id="result" class="result"></div>
+</div>
+<script>
+    function giaiPhuongTrinhBacII() {
+        var a = parseFloat(document.getElementById('input-a').value);
+        var b = parseFloat(document.getElementById('input-b').value);
+        var c = parseFloat(document.getElementById('input-c').value);
+
+        var delta = b * b - 4 * a * c;
+        var result = document.getElementById('result');
+        if (isNaN(a) || isNaN(b) || isNaN(c)) {
+            result.innerHTML = 'Nhập đầy đủ giá trị a, b, c.';
+        } else if (a === 0) {
+            result.innerHTML = 'Không phải phương trình bậc hai.';
+        } else if (delta < 0) {
+            result.innerHTML = 'Phương trình vô nghiệm.';
+        } else if (delta === 0) {
+            var x = -b / (2 * a);
+            result.innerHTML = 'Phương trình có nghiệm kép: x = ' + x;
+        } else {
+            var x1 = (-b + Math.sqrt(delta)) / (2 * a);
+            var x2 = (-b - Math.sqrt(delta)) / (2 * a);
+            result.innerHTML = 'Phương trình có 2 nghiệm phân biệt:<br>' ;
+            result.innerHTML += '<br>x1 = ' + x1;
+            result.innerHTML += '<br>x2 = ' + x2;
+        }
+    }
+</script>
+</body>
+</html>

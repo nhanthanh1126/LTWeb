@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+}
+
+.color {
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+}

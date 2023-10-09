@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đổi màu nền</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<button class="color" id="red" onclick="changeBackgroundColor('red')">red</button>
+<button class="color" id="green" onclick="changeBackgroundColor('green')">green</button>
+<button class="color" id="blue" onclick="changeBackgroundColor('blue')">blue</button>
+<button class="color" id="yellow" onclick="changeBackgroundColor('yellow')">yellow</button>
+<button class="color" id="purple" onclick="changeBackgroundColor('purple')">purple</button>
+<button class="color" id="cyan" onclick="changeBackgroundColor('cyan')">cyan</button>
+<button class="color" id="pink" onclick="changeBackgroundColor('pink')">pink</button>
+<button class="color" id="orange" onclick="changeBackgroundColor('orange')">orange</button>
+<button class="color" id="gray" onclick="changeBackgroundColor('gray')">gray</button>
+
+<script>
+    function changeBackgroundColor(color) {
+        document.body.style.backgroundColor = color;
+    }
+</script>
+</body>
+</html>

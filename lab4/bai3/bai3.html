@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lời chào ngẫu nhiên</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+<h2>Lời chào ngẫu nhiên</h2>
+
+<div id="greeting"></div>
+
+<script>
+    var greetings = [
+        "Chào bạn!",
+        "Xin chào!",
+        "Hello!"
+
+    ];
+
+    function displayRandomGreeting() {
+        var greeting = greetings[Math.floor(Math.random() * greetings.length)];
+        alert(greeting);
+    }
+
+    window.onload = displayRandomGreeting;
+</script>
+</body>
+</html>
